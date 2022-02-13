@@ -10,7 +10,7 @@ This directory holds the Terraform code that enables the deployment of a GKE clu
 
 ## Environment Setup
 
-To setup an environment, create a directory for the environment with the modules you wish to deploy. Example [`dev`](envs/dev) and ['prd`](envs/prd) environment has been created. Each module within an environment will follow a basic structure with 3 files:
+To setup an environment, create a directory for the environment with the modules you wish to deploy. Example [`dev`](envs/dev) and [`prd`](envs/prd) environment has been created. Each module within an environment will follow a basic structure with 3 files:
 
 * backend.tf - Specifies the bucket where th terraform state file is stored remotely.
 * main.tf - References the module to deploy and any required variables (each module has a README specifying the required/optional variables).
